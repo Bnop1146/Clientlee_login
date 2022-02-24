@@ -43,11 +43,13 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
             $_SESSION['loggedin'] = TRUE;
             $_SESSION['name'] = $_POST['username'];
             $_SESSION['id'] = $id;
-            header('Location: https://www.codeproject.com/Questions/711838/Multiple-database-to-a-single-website');
+            header('Location: home.php');
+
         } else {
             // Incorrect password
             echo 'Incorrect password!';
         }
+
     } else {
         // Incorrect username
         echo 'Incorrect username!';
