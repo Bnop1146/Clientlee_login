@@ -1,6 +1,3 @@
-
-
-
 <?php
 // We need to use sessions, so you should always start sessions using the below code.
 session_start();
@@ -16,21 +13,31 @@ if (!isset($_SESSION['loggedin'])) {
 <head>
     <meta charset="utf-8">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link href="css/home.css" rel="stylesheet" type="text/css">
+
+
 </head>
 <body class="loggedin">
-<nav class="navtop">
-    <div>
-        <h1>Website Title</h1>
-        <a href="profile.php"><i class="fas fa-user-circle"></i>Profile</a>
-        <a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
-    </div>
-</nav>
-<div class="content">
+
+<?php include 'navigation.php'; ?>
+
+
+<!--Container Main start-->
+<div class="height-100 bg-light">
     <h2>Home Page</h2>
-    <p>Welcome back, <?=$_SESSION['name']?>!</p>
+    <p>Welcome back, <?= $_SESSION['name'] ?>!</p>
 </div>
+<!--Container Main end-->
+
+
+
 </body>
 </html>
 
