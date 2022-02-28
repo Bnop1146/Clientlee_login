@@ -29,12 +29,12 @@
 <div class="l-navbar" id="nav-bar">
     <nav class="nav">
         <div>
-            <a href="#" class="nav_logo">
+            <a href="home.php" class="nav_logo">
                 <i class='bx bx-layer nav_logo-icon'></i> <span class="nav_logo-name">Dashboard</span>
             </a>
 
             <div class="nav_list">
-                <a href="home.php" class="nav_link active">
+                <a href="home.php" class="nav_link">
                     <i class='bx bx-grid-alt nav_icon'></i>
                     <span class="nav_name">Hjem</span>
                 </a>
@@ -44,7 +44,7 @@
                     <span class="nav_name">Kunder</span>
                 </a>
 
-                <a href="#" class="nav_link">
+                <a href="insert.php" class="nav_link">
                     <i class='bx bxs-user-plus nav_icon'></i>
                     <span class="nav_name">Opret ny Kunde</span>
                 </a>

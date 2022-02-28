@@ -1,7 +1,7 @@
 :root {
   --header-height: 3rem;
   --nav-width: 68px;
-  --first-color: #4723D9;
+  --first-color: #2871cc;
   --first-color-light: #AFA5D9;
   --white-color: #F7F6FB;
   --body-font: 'Nunito', sans-serif;
@@ -170,7 +170,7 @@ a {
     padding: 1rem 1rem 0 0
   }
 
-  .show {
+  .shownav {
     width: calc(var(--nav-width) + 156px)
   }
 

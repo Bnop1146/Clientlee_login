@@ -5,10 +5,28 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
+:root {
+	--header-height: 3rem;
+	--nav-width: 68px;
+	--first-color: #2871cc;
+	--first-color-light: #AFA5D9;
+	--white-color: #F7F6FB;
+	--body-font: 'Nunito', sans-serif;
+	--normal-font-size: 1rem;
+	--z-fixed: 100
+}
+
 body {
 
 }
 
+
+
+
+.kundecta{
+	background: var(--first-color) !important;
+}
 .login {
 	width: 400px;
 	background-color: #ffffff;
@@ -138,4 +156,6 @@ body.loggedin {
 	padding: 5px;
 	margin: 0 0 10px 0;
 }
+
+
 
