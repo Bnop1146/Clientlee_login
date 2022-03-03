@@ -8,30 +8,7 @@ if (!isset($_SESSION['loggedin'])) {
 }
 
 
-require "classes/classDB.php";
-
-const CONFIG_LIVE = "0"; // 0: Test enviroment || 1: Live enviroment
-
-if(CONFIG_LIVE == 0){
-    $DATABASE_HOST = 'localhost';
-    $DATABASE_USER = 'root';
-    $DATABASE_PASS = '';
-    $DATABASE_NAME = 'phplogin';
-}else{
-    $DATABASE_HOST ="mysql109.unoeuro.com";
-    $DATABASE_NAME = "bnopone_dk_db";
-    $DATABASE_USER = "bnopone_dk";
-    $DATABASE_PASS = "k26RgmedhF4H";
-}
-
-$db = new db($DATABASE_HOST, $DATABASE_NAME, $DATABASE_USER, $DATABASE_PASS);
-
-// Try and connect using the info above.
-$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
-if ( mysqli_connect_errno() ) {
-    // If there is an error with the connection, stop the script and display the error.
-    exit('Failed to connect to MySQL: ' . mysqli_connect_error());
-}
+require 'init.php';
 
 
 // We don't have the password or email info stored in sessions so instead we can get the results from the database.
@@ -66,11 +43,11 @@ $stmt->close();
             <table>
                 <tr>
                     <td>Username:</td>
-                    <td><?=$_SESSION['name']?></td>
+                    <td><?= $_SESSION['name'] ?></td>
                 </tr>
                 <tr>
                     <td>Email:</td>
-                    <td><?=$email?></td>
+                    <td><?= $email ?></td>
                 </tr>
 
                 <tr>
@@ -82,8 +59,6 @@ $stmt->close();
     </div>
 </div>
 <!--Container Main end-->
-
-
 
 
 </body>

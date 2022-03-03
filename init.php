@@ -1,0 +1,30 @@
+<?php
+require "classes/classDB.php";
+
+const CONFIG_LIVE = "0"; // 0: Test enviroment || 1: Live enviroment
+
+if (CONFIG_LIVE == 0) {
+    $DB_SERVER = 'localhost';
+    $DB_NAME = 'phplogin';
+    $DB_USER = 'root';
+    $DB_PASS = '';
+
+} else {
+    $DB_SERVER = "mysql109.unoeuro.com";
+    $DB_NAME = "bnopone_dk_db";
+    $DB_USER = "bnopone_dk";
+    $DB_PASS = "k26RgmedhF4H";
+
+
+}
+
+$db = new db($DB_SERVER, $DB_NAME, $DB_USER, $DB_PASS);
+
+// Try and connect using the info above.
+$con = mysqli_connect($DB_SERVER, $DB_USER, $DB_PASS, $DB_NAME);
+if (mysqli_connect_errno()) {
+    // If there is an error with the connection, stop the script and display the error.
+    exit('Failed to connect to MySQL: ' . mysqli_connect_error());
+}
+
+
