@@ -83,7 +83,7 @@ if (!empty($_POST["data"])) {
                 ...
             </div>
             <div class="modal-footer">
-                <a class="btn btn-primary" type="button" href="insert.php" role="button">Indsæt ny kunde</a>
+                <a class="btn btn-primary text-white" type="button" href="insert.php" role="button">Indsæt ny kunde</a>
             </div>
         </div>
     </div>

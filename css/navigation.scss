@@ -4,9 +4,10 @@
   --first-color: #2871cc;
   --first-color-light: #AFA5D9;
   --white-color: #F7F6FB;
-  --body-font: 'Nunito', sans-serif;
-  --normal-font-size: 1rem;
+  --body-font: 'Poppins', sans-serif;
+  --normal-font-size: 24px;
   --z-fixed: 100
+
 }
 
 *,
@@ -88,8 +89,16 @@ a {
   grid-template-columns: max-content max-content;
   align-items: center;
   column-gap: 1rem;
-  padding: .5rem 0 .5rem 1.5rem
+  padding: .5rem 0 .5rem 1.5rem;
+
 }
+
+.nav_name{
+  font-size: 18px;
+  font-family: var(--body-font);
+}
+
+
 
 .nav_logo {
   margin-bottom: 2rem
@@ -102,12 +111,13 @@ a {
 
 .nav_logo-name {
   color: var(--white-color);
-  font-weight: 700
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .nav_link {
   position: relative;
-  color: var(--first-color-light);
+  color: white;
   margin-bottom: 1.5rem;
   transition: .3s
 }
