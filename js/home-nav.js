@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
     }
 
+
+
     showNavbar('header-toggle','nav-bar','body-pd','header')
 
     /*===== LINK ACTIVE =====*/
@@ -35,4 +37,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
     linkColor.forEach(l=> l.addEventListener('click', colorLink))
 
 // Your code to run since DOM is loaded and ready
+
 });

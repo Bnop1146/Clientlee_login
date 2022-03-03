@@ -39,7 +39,7 @@
                     <span class="nav_name">Hjem</span>
                 </a>
 
-                <a href="#" class="nav_link">
+                <a href="customers.php" class="nav_link">
                     <i class='bx bxs-user-account nav_icon'></i>
                     <span class="nav_name">Kunder</span>
                 </a>
