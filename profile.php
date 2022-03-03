@@ -22,7 +22,7 @@ $stmt->close();
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang=>
 <head>
     <meta charset="utf-8">
     <title>Profil side</title>

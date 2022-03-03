@@ -1,20 +1,8 @@
 <?php
 session_start();
 // Change this to your connection info.
-require "classes/classDB.php";
 
-$DB_SERVER = 'localhost';
-$DB_USER = 'root';
-$DB_PASS = '';
-$DB_NAME = 'phplogin';
-
-
-// Try and connect using the info above.
-$con = mysqli_connect($DB_SERVER, $DB_USER, $DB_PASS, $DB_NAME);
-if (mysqli_connect_errno()) {
-    // If there is an error with the connection, stop the script and display the error.
-    exit('Failed to connect to MySQL: ' . mysqli_connect_error());
-}
+require 'init.php';
 
 
 // Now we check if the data from the login form was submitted, isset() will check if the data exists.

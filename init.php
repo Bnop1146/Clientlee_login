@@ -21,7 +21,7 @@ if (CONFIG_LIVE == 0) {
 $db = new db($DB_SERVER, $DB_NAME, $DB_USER, $DB_PASS);
 
 // Try and connect using the info above.
-$con = mysqli_connect($DB_SERVER, $DB_USER, $DB_PASS, $DB_NAME);
+$con = mysqli_connect($DB_SERVER,  $DB_USER, $DB_PASS, $DB_NAME);
 if (mysqli_connect_errno()) {
     // If there is an error with the connection, stop the script and display the error.
     exit('Failed to connect to MySQL: ' . mysqli_connect_error());
