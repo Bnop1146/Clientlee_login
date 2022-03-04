@@ -18,7 +18,7 @@
 }
 
 body {
-	background: url(../image/baggrund.png);
+	background: url(../image/mobilbaggrund.png);
 	background-size: cover
 }
 
@@ -172,6 +172,10 @@ body.loggedin {
 
 	.loginsek{
 		margin-top: 250px;
+	}
+	body {
+		background: url(../image/tabletbaggrund.png);
+		background-size: cover
 	}
 }
 
