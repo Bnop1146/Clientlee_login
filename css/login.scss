@@ -3,6 +3,13 @@ body {
   background-size: cover
 }
 
+@media screen and (min-width: 768px){
+
+  body {
+    background: url(../image/tabletbaggrund.png);
+    background-size: cover
+  }
+}
 
 @media screen and (min-width: 1024px){
 

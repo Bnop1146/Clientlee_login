@@ -173,10 +173,7 @@ body.loggedin {
 	.loginsek{
 		margin-top: 250px;
 	}
-	body {
-		background: url(../image/tabletbaggrund.png);
-		background-size: cover
-	}
+
 }
 
 @media screen and (min-width: 1024px){
@@ -189,10 +186,6 @@ body.loggedin {
 
 	.loginsek{
 		margin-top: 100px;
-	}
-	body {
-		background: url(../image/baggrund.png);
-		background-size: cover
 	}
 
 }
