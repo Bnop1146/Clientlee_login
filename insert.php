@@ -17,9 +17,10 @@ if (!empty($_POST["data"])) {
     $file = $_FILES;
 
 
-    $sql = "INSERT INTO customers (kundeNavn, kundeTelefon, kundeEmail, kundeAdresse, kundePost) VALUES 
-                                        (:kundeNavn, :kundeTelefon, :kundeEmail, :kundeAdresse, :kundePost)";
+    $sql = "INSERT INTO customers (kundeDato, kundeNavn, kundeTelefon, kundeEmail, kundeAdresse, kundePost) VALUES 
+                                        (:kundeDato, :kundeNavn, :kundeTelefon, :kundeEmail, :kundeAdresse, :kundePost)";
     $bind = [
+        "kundeDato" => $data["kundeDato"],
         ":kundeNavn" => $data["kundeNavn"],
         ":kundeTelefon" => $data["kundeTelefon"],
         ":kundeEmail" => $data["kundeEmail"],
@@ -44,7 +45,7 @@ if (!empty($_POST["data"])) {
 <head>
     <meta charset="utf-8">
 
-    <title></title>
+    <title>Indsæt ny kunde</title>
 
     <meta name="robots" content="All">
     <meta name="author" content="Udgiver">
@@ -128,7 +129,7 @@ if (!empty($_POST["data"])) {
                 </div>
 
 
-                <div class="col-12 col-md-4 mb-4">
+                <div class="col-12 col-md-5 mb-4">
                     <div class="form-group">
                         <label for="kundeAdresse">Kunde Adresse</label>
                         <input class="form-control" type="text" name="data[kundeAdresse]" id="kundeAdresse"
@@ -141,6 +142,14 @@ if (!empty($_POST["data"])) {
                         <label for="kundePost">Post nummer</label>
                         <input class="form-control" type="number" name="data[kundePost]" id="kundePost"
                                placeholder="Post nr." value="" required>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-5 mb-4">
+                    <div class="form-group">
+                        <label for="kundeDato">Dato for arbejde</label>
+                        <input class="form-control" type="date" name="data[kundeDato]" id="kundeDato"
+                               placeholder="Dato." value="" required>
                     </div>
                 </div>
 
