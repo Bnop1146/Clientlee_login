@@ -17,19 +17,13 @@
 	--z-fixed: 100
 }
 
-body {
-	background: url(../image/mobilbaggrund.png);
-	background-size: cover
-}
-
-
 
 
 .kundecta{
 	background: var(--first-color) !important;
 }
 .login {
-	width: 400px;
+	width: 375px;
 	background-color: #ffffff;
 	box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
 	margin: 30px auto;
@@ -168,6 +162,7 @@ body.loggedin {
 	}
 	.login{
 		margin: 40px auto;
+		width: 400px;
 	}
 
 	.loginsek{
