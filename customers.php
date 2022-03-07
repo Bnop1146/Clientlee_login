@@ -6,6 +6,9 @@ if (!isset($_SESSION['loggedin'])) {
     header('Location: index.html');
     exit;
 }
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -78,6 +81,7 @@ if (!isset($_SESSION['loggedin'])) {
                     <th scope="col">Email</th>
                     <th scope="col">Adresse</th>
                     <th class="td-post" scope="col">Postnr</th>
+                    <th>Slet kunde</th>
                 </tr>
                 </thead>
             </table>

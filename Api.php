@@ -67,7 +67,7 @@ if (isset($data["password"]) && $data["password"] == "Bnop1146") {
 
 
 
-    $sql .= " ORDER BY kundeDato DESC";
+    $sql .= " ORDER BY kundeDato ASC";
 
 
     $customers = $db->sql($sql, $bind);

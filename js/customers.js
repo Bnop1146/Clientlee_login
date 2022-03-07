@@ -62,6 +62,7 @@ export default class Customers {
 
             col.innerHTML = `
 
+
 <table class="table table-bordered align-middle">
   <tbody class="text-center  ">
     <tr class="tr-table">
@@ -71,6 +72,7 @@ export default class Customers {
           <td>${item.kundeEmail}</td>
           <td>${item.kundeAdresse}</td>
           <td class="td-post">${item.kundePost}</td>
+          <td><a href="delete.php?kundeId=${item.kundeId}">Slet</a></td>
     </tr>
   </tbody>
 </table>
