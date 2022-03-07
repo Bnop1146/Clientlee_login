@@ -65,7 +65,7 @@ export default class Customers {
 <table class="table table-bordered align-middle">
   <tbody class="text-center  ">
     <tr class="tr-table">
-          <td class="td-dato">${item.kundeDato}</td>
+          <td class="td-dato ">${item.kundeDato}</td>
           <td>${item.kundeNavn}</td>
           <td class="td-telefon">${item.kundeTelefon}</td>
           <td>${item.kundeEmail}</td>
