@@ -72,7 +72,7 @@ export default class Customers {
           <td>${item.kundeEmail}</td>
           <td>${item.kundeAdresse}</td>
           <td class="td-post">${item.kundePost}</td>
-          <td><a href="delete.php?kundeId=${item.kundeId}">Slet</a></td>
+          <td class="td-slet"><a href="delete.php?kundeId=${item.kundeId}"><i class='bx bxs-x-circle'></i></a></td>
     </tr>
   </tbody>
 </table>

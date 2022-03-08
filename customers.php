@@ -38,6 +38,7 @@ if (!isset($_SESSION['loggedin'])) {
     <div class="p-5">
         <div class="customers p-5">
             <div class="filter mb-5"> Søgemaskine
+                <br>
                 <div class="row d-flex align-items-center justify-content-center">
                     <div class="col-md-2 ">
                         <input type="search" class="form-control dateSearch  text-black"
@@ -81,7 +82,7 @@ if (!isset($_SESSION['loggedin'])) {
                     <th scope="col">Email</th>
                     <th scope="col">Adresse</th>
                     <th class="td-post" scope="col">Postnr</th>
-                    <th>Slet kunde</th>
+                    <th class="td-slet">Slet</th>
                 </tr>
                 </thead>
             </table>
