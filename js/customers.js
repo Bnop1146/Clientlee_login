@@ -68,8 +68,8 @@ export default class Customers {
     <tr class="tr-table">
           <td class="td-dato ">${item.kundeDato}</td>
           <td>${item.kundeNavn}</td>
-          <td class="td-telefon">${item.kundeTelefon}</td>
-          <td>${item.kundeEmail}</td>
+          <td class="td-telefon"><a href="tel:${item.kundeTelefon}">${item.kundeTelefon}</a></td>
+          <td class="td-email"><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${item.kundeEmail}" target="_blank">${item.kundeEmail}</td>
           <td>${item.kundeAdresse}</td>
           <td class="td-post">${item.kundePost}</td>
           <td class="td-slet"><a href="delete.php?kundeId=${item.kundeId}"><i class='bx bxs-x-circle'></i></a></td>

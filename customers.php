@@ -79,7 +79,7 @@ if (!isset($_SESSION['loggedin'])) {
                     <th class="td-dato" scope="col">Dato</th>
                     <th scope="col">Navn</th>
                     <th class="td-telefon" scope="col">Telefon</th>
-                    <th scope="col">Email</th>
+                    <th class="td-email" scope="col">Email</th>
                     <th scope="col">Adresse</th>
                     <th class="td-post" scope="col">Postnr</th>
                     <th class="td-slet">Slet</th>
