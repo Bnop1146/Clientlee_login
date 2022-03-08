@@ -12,11 +12,11 @@ require 'init.php';
 
 
 // We don't have the password or email info stored in sessions so instead we can get the results from the database.
-$stmt = $con->prepare('SELECT password, email FROM accounts WHERE id = ?');
+$stmt = $con->prepare('SELECT password, email, company FROM accounts WHERE id = ?');
 // In this case we can use the account ID to get the account info.
 $stmt->bind_param('i', $_SESSION['id']);
 $stmt->execute();
-$stmt->bind_result($password, $email);
+$stmt->bind_result($password, $email, $company);
 $stmt->fetch();
 $stmt->close();
 ?>
@@ -51,8 +51,8 @@ $stmt->close();
                 </tr>
 
                 <tr>
-                    <td>Virksomhed</td>
-                    <td>Bengtsons Multiservice</td>
+                    <td>Virksomhed:</td>
+                    <td><?= $company ?></td>
                 </tr>
             </table>
         </div>
