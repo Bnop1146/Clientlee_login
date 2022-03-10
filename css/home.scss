@@ -1,0 +1,64 @@
+.home1{
+  padding: 30px;
+}
+
+
+.home2over{
+  font-size: 24px;
+  color: #747474;
+  font-weight: bold;
+  font-family: var(--overskrift-font);
+
+}
+
+.home2tekst{
+  color: #747474;
+  font-size: 14px;
+  line-height: 2;
+  font-family: var(--tekst-font);
+}
+
+.home2knap{
+  border: 0!important;
+  background: var(--ikonercta) !important;
+  color:white!important;
+  padding: 12px 50px!important;
+  border-radius: 100px!important;
+  cursor: pointer!important;
+  transition: 0.5s!important;
+  margin-top: 5px!important;
+  font-family: var(--tekst-font) !important;
+  font-size: 13px!important;
+
+}
+
+.homecon{
+  margin-bottom: 30px;
+}
+
+
+
+
+@media screen and (min-width: 768px){
+  .homecon{
+    margin-bottom: 60px;
+    margin-top: 40px;
+  }
+  .home2{
+    margin-top: 70px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .home2{
+    margin-top: 140px;
+  }
+  .home2over{
+    font-size: 28px;
+  }
+  .home2tekst{
+    font-size: 14px;
+    width: 70%;
+  }
+
+}
