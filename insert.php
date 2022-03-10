@@ -81,7 +81,7 @@ if (!empty($_POST["data"])) {
 
             </div>
             <div class="modal-body">
-                ...
+                Indsætning fuldført
             </div>
             <div class="modal-footer">
                 <a class="btn btn-primary text-white" type="button" href="insert.php" role="button">Indsæt ny kunde</a>
@@ -93,9 +93,10 @@ if (!empty($_POST["data"])) {
 
 <?php include 'navigation.php'; ?>
 
+<br> <br>
 
 <!--Container Main start-->
-<div class="height-100 bg-light">
+<div class="height-100 ">
 
     <div class="container mb-4 p-4 border border-dark rounded-2 text-black ">
 

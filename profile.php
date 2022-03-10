@@ -33,9 +33,10 @@ $stmt->close();
 
 <?php include 'navigation.php'; ?>
 
+<br>
 
 <!--Container Main start-->
-<div class="height-100 bg-light">
+<div class="">
     <div class="content">
         <h2>Profile Page</h2>
         <div>
