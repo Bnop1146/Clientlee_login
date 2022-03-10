@@ -34,7 +34,7 @@
 
 
 <!--Container Main start-->
-<div class="height-100 bg-light">
+<div class="height-100">
 
     <div class="homecon container">
         <div class="row">
