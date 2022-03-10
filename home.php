@@ -35,10 +35,10 @@ if (!isset($_SESSION['loggedin'])) {
 <!--Container Main start-->
 <div class="height-100">
 
-    <div class="homecon container">
-        <div class="row">
+    <div class="homecon container ">
+        <div class="row ">
             <div class="col-lg-2"></div>
-            <div class="home2 col-sm-12 col-md-6 col-lg-5">
+            <div class="home2 col-sm-12 col-md-6 col-lg-5 ">
                 <p class="home2over">Velkommen til dit Dashboard</p>
                 <p class="home2tekst">
                     Dit Dashboard hjælper dig med at holde din kundekreds Organiseret, og kontakte dem
@@ -54,7 +54,7 @@ if (!isset($_SESSION['loggedin'])) {
             </div>
 
             <div class="home1 col-sm-12 col-md-6 col-lg-4">
-                <img src="image/Dashboard uden boks.png" class="home1billede img-fluid">
+                <img src="image/Dashboard%20uden%20boks.png" class="home1billede img-fluid" alt="">
 
             </div>
             <div class="col-lg-1"></div>
@@ -84,10 +84,10 @@ if (!isset($_SESSION['loggedin'])) {
             <div class="col">
                 <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
                     <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                        <h2 class="pb-5 mt-5 mb-4 display-6 lh-1 fw-bold">Ønsker du at oprette nye kunder kan du trykke her</h2>
+                        <h2 class="pb-5 mt-5 mb-4 display-6 lh-1 fw-bold">Ønsker du at oprette nye kunder kan du trykke på pilen her</h2>
                         <ul class="d-flex list-unstyled mt-auto">
                             <li class="me-auto">
-                                <a href="customers.php"><i class='bx bxs-chevrons-left bx-lg'></i></a>
+                                <a href="insert.php"><i class='bx bxs-chevrons-left bx-lg'></i></a>
                             </li>
                         </ul>
                     </div>
