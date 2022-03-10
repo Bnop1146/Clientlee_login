@@ -2,21 +2,19 @@
   background: url(../image/Dashboard-Background.png);
 }
 
-.home1{
-  padding: 30px;
-}
+
 
 
 .home2over{
   font-size: 24px;
-  color: #747474;
+  color: var(--tekstfarve);
   font-weight: bold;
   font-family: var(--overskrift-font);
 
 }
 
 .home2tekst{
-  color: #747474;
+  color: var(--tekstfarve);
   font-size: 14px;
   line-height: 2;
   font-family: var(--tekst-font);

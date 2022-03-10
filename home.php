@@ -1,15 +1,3 @@
-<?php
-// We need to use sessions, so you should always start sessions using the below code.
-session_start();
-// If the user is not logged in redirect to the login page...
-if (!isset($_SESSION['loggedin'])) {
-    header('Location: index.html');
-    exit;
-}
-//$hashed_password = password_hash('test', PASSWORD_DEFAULT);
-//echo $hashed_password;
-
-?>
 
 
 <!DOCTYPE html>
@@ -37,8 +25,8 @@ if (!isset($_SESSION['loggedin'])) {
 
     <div class="homecon container">
         <div class="row">
-            <div class="col-lg-1"></div>
-            <div class="home2 col-sm-12 col-md-6 col-lg-6">
+            <div class="col-lg-2"></div>
+            <div class="home2 col-sm-12 col-md-6 col-lg-5">
                 <p class="home2over">Overskrift</p>
                 <p class="home2tekst">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -51,10 +39,11 @@ if (!isset($_SESSION['loggedin'])) {
 
             </div>
 
-            <div class="home1 col-sm-12 col-md-6 col-lg-5">
-                <img src="#" class="home1billede img-fluid">
+            <div class="home1 col-sm-12 col-md-6 col-lg-4">
+                <img src="image/Dashboard uden boks.png" class="home1billede img-fluid">
 
             </div>
+            <div class="col-lg-1"></div>
 
         </div>
     </div>
