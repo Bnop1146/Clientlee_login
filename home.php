@@ -1,4 +1,4 @@
-<?php
+<?php ?>
 // We need to use sessions, so you should always start sessions using the below code.
 //session_start();
 // If the user is not logged in redirect to the login page...
@@ -7,10 +7,6 @@
     //exit;
 }
 
-//$hashed_password = password_hash('test', PASSWORD_DEFAULT);
-//echo $hashed_password;
-
-?>
 
 
 <!DOCTYPE html>
@@ -34,11 +30,11 @@
 
 
 <!--Container Main start-->
-<div class="height-100 bg-light">
+<div class="height-100">
 
     <div class="homecon container">
         <div class="row">
-            <div class="col-lg-1"></div>
+            <div class="col-lg-2"></div>
             <div class="home2 col-sm-12 col-md-6 col-lg-6">
                 <p class="home2over">Overskrift</p>
                 <p class="home2tekst">
@@ -52,7 +48,7 @@
 
             </div>
 
-            <div class="home1 col-sm-12 col-md-6 col-lg-5">
+            <div class="home1 col-sm-12 col-md-6 col-lg-4">
                 <img src="#" class="home1billede img-fluid">
 
             </div>
