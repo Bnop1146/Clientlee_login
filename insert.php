@@ -76,15 +76,17 @@ if (!empty($_POST["data"])) {
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Insert Completed</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Indsætning fuldført</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
             </div>
             <div class="modal-body">
-                Indsætning fuldført
+                Din kunde indsætning er fuldendt, tryk på Gå til Kundeoversigt for at gå til alle kunder
+                eller tryk på indsæt ny, for at indtaste flere kunder.
             </div>
             <div class="modal-footer">
-                <a class="btn btn-primary text-white" type="button" href="insert.php" role="button">Indsæt ny kunde</a>
+                <a class="btn btn-success text-white" type="button"  href="customers.php" role="button">Gå til Kundeoversigt</a>
+                <a class="btn btn-primary text-white" type="button"  href="insert.php" role="button">Indsæt ny</a>
             </div>
         </div>
     </div>
