@@ -26,7 +26,9 @@
         <i class='bx bx-menu' id="header-toggle"></i>
     </div>
 
-    <div class="header_img"><img src="https://i.imgur.com/hczKIze.jpg" alt=""></div>
+    <a href="profile.php">
+        <div class="header_img"><img src="https://i.imgur.com/hczKIze.jpg" alt=""></div>
+    </a>
 </header>
 
 <div class="l-navbar" id="nav-bar">
@@ -56,8 +58,6 @@
                     <i class='bx bx-user nav_icon'></i>
                     <span class="nav_name">Bruger</span>
                 </a>
-
-
 
 
             </div>

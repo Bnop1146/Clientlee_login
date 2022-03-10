@@ -97,39 +97,39 @@ if (!empty($_POST["data"])) {
 <!--Container Main start-->
 <div class="height-100 bg-light">
 
-    <div class="container mb-4 p-4 bg-primary bg-opacity-10 rounded-2 text-white ">
+    <div class="container mb-4 p-4 border border-dark rounded-2 text-black ">
 
-        <hr class="p-1 mt-3">
+        <hr class="insert-line mt-3">
 
         <form class="m-5" method="post" action="insert.php" enctype="multipart/form-data">
             <div class="row">
-                <div class="col-12 col-md-5 mb-4">
+                <div class="col-12 col-md-6 mb-4">
                     <div class="form-group">
                         <label for="kundeNavn">Kunde Navn</label>
                         <input class="form-control" type="text" name="data[kundeNavn]" id="kundeNavn"
-                               placeholder="Kunde Navn" value="" required>
+                               placeholder="Navn" value="" required>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-5 mb-4">
+                <div class="col-12 col-md-6 mb-4">
                     <div class="form-group">
                         <label for="kundeTelefon">Kunde Telefon nummer</label>
                         <input class="form-control" type="number" name="data[kundeTelefon]" id="kundeTelefon"
-                               placeholder="Telefon nr." value="" required>
+                               placeholder="Nummer" value="" required>
                     </div>
                 </div>
 
 
-                <div class="col-12 col-md-5 mb-4">
+                <div class="col-12 col-md-6 mb-4">
                     <div class="form-group">
-                        <label for="kundeEmail">Kunde Email</label>
+                        <label for="kundeEmail">Kundens Email Adresse</label>
                         <input class="form-control" type="email" name="data[kundeEmail]" id="kundeEmail"
                                placeholder="Email Adresse" value="" required>
                     </div>
                 </div>
 
 
-                <div class="col-12 col-md-5 mb-4">
+                <div class="col-12 col-md-6 mb-4">
                     <div class="form-group">
                         <label for="kundeAdresse">Kunde Adresse</label>
                         <input class="form-control" type="text" name="data[kundeAdresse]" id="kundeAdresse"
@@ -137,7 +137,7 @@ if (!empty($_POST["data"])) {
                     </div>
                 </div>
 
-                <div class="col-12 col-md-5 mb-4">
+                <div class="col-12 col-md-6 mb-4">
                     <div class="form-group">
                         <label for="kundePost">Post nummer</label>
                         <input class="form-control" type="number" name="data[kundePost]" id="kundePost"
@@ -145,7 +145,7 @@ if (!empty($_POST["data"])) {
                     </div>
                 </div>
 
-                <div class="col-12 col-md-5 mb-4">
+                <div class="col-12 col-md-6 mb-4">
                     <div class="form-group">
                         <label for="kundeDato">Dato for arbejde</label>
                         <input class="form-control" type="date" name="data[kundeDato]" id="kundeDato"
@@ -157,7 +157,7 @@ if (!empty($_POST["data"])) {
             </div>
 
 
-            <hr class="p-1 mt-3">
+            <hr class="insert-line mt-3">
 
 
             <div class="col-3 ">

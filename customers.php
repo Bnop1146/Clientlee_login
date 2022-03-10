@@ -6,6 +6,9 @@ if (!isset($_SESSION['loggedin'])) {
     header('Location: index.html');
     exit;
 }
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -35,6 +38,7 @@ if (!isset($_SESSION['loggedin'])) {
     <div class="p-5">
         <div class="customers p-5">
             <div class="filter mb-5"> Søgemaskine
+                <br>
                 <div class="row d-flex align-items-center justify-content-center">
                     <div class="col-md-2 ">
                         <input type="search" class="form-control dateSearch  text-black"
@@ -75,9 +79,10 @@ if (!isset($_SESSION['loggedin'])) {
                     <th class="td-dato" scope="col">Dato</th>
                     <th scope="col">Navn</th>
                     <th class="td-telefon" scope="col">Telefon</th>
-                    <th scope="col">Email</th>
+                    <th class="td-email" scope="col">Email</th>
                     <th scope="col">Adresse</th>
                     <th class="td-post" scope="col">Postnr</th>
+                    <th class="td-slet">Slet</th>
                 </tr>
                 </thead>
             </table>
