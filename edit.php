@@ -1,3 +1,4 @@
+
 <?php
 
 // We need to use sessions, so you should always start sessions using the below code.
@@ -11,31 +12,15 @@ if (!isset($_SESSION['loggedin'])) {
 
 require 'init.php';
 
+    $id = $_GET['kundeId'];
+    $sql = "SELECT * FROM customers WHERE kundeId = $id";
+    $bind = [":kundeId" => $_GET["kundeId"]];
+    $result = $db->sql($sql, $bind);
+    $result = $result[0];
 
-if (!empty($_POST["data"])) {
-    $data = $_POST["data"];
-    $file = $_FILES;
 
 
-    $sql = "INSERT INTO customers (kundeDato, kundeNavn, kundeTelefon, kundeEmail, kundeAdresse, kundePost, kundeKommentar) VALUES 
-                                        (:kundeDato, :kundeNavn, :kundeTelefon, :kundeEmail, :kundeAdresse, :kundePost, :kundeKommentar)";
-    $bind = [
-        ":kundeDato" => $data["kundeDato"],
-        ":kundeNavn" => $data["kundeNavn"],
-        ":kundeTelefon" => $data["kundeTelefon"],
-        ":kundeEmail" => $data["kundeEmail"],
-        ":kundeAdresse" => $data["kundeAdresse"],
-        ":kundePost" => $data["kundePost"],
-        ":kundeKommentar" => $data["kundeKommentar"],
 
-    ];
-
-    $db->sql($sql, $bind, false);
-
-    header("Location: insert.php?status=1");
-    exit;
-
-}
 
 
 ?>
@@ -46,7 +31,7 @@ if (!empty($_POST["data"])) {
 <head>
     <meta charset="utf-8">
 
-    <title>Indsæt ny kunde</title>
+    <title>Redigering</title>
 
     <meta name="robots" content="All">
     <meta name="author" content="Udgiver">
@@ -71,27 +56,6 @@ if (!empty($_POST["data"])) {
 </head>
 
 <body class="loggedin">
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Indsætning fuldført</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-
-            </div>
-            <div class="modal-body">
-                Din kunde indsætning er fuldendt, tryk på Gå til Kundeoversigt for at gå til alle kunder
-                eller tryk på indsæt ny, for at indtaste flere kunder.
-            </div>
-            <div class="modal-footer">
-                <a class="btn btn-success text-white" type="button"  href="customers.php" role="button">Gå til Kundeoversigt</a>
-                <a class="btn btn-primary text-white" type="button"  href="insert.php" role="button">Indsæt ny</a>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 <?php include 'navigation.php'; ?>
@@ -102,24 +66,25 @@ if (!empty($_POST["data"])) {
 <div class="height-100 ">
 
     <div class="container mb-4 p-4 border border-dark rounded-2 text-black ">
-        <h3>Oprettelses formular</h3>
+        <h3>Redigerings formular</h3>
         <hr class="insert-line mt-3">
 
-        <form class="m-5" method="post" action="insert.php" enctype="multipart/form-data">
+        <form class="m-5" method="post" action="modify.php?kundeId= <?= $id ?>" enctype="multipart/form-data">
             <div class="row">
+
                 <div class="col-12 col-md-6 mb-4">
                     <div class="form-group">
                         <label for="kundeNavn">Kunde Navn</label>
-                        <input class="form-control" type="text" name="data[kundeNavn]" id="kundeNavn"
-                               placeholder="Navn" value="" required>
+                        <input class="form-control" type="text" name="kundeNavn" id="kundeNavn"
+                               placeholder="Navn" value="<?php echo $result->kundeNavn; ?>" required>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 mb-4">
                     <div class="form-group">
                         <label for="kundeTelefon">Kunde Telefon nummer</label>
-                        <input class="form-control" type="number" name="data[kundeTelefon]" id="kundeTelefon"
-                               placeholder="Nummer" value="" required>
+                        <input class="form-control" type="number" name="kundeTelefon" id="kundeTelefon"
+                               placeholder="Nummer" value="<?php echo $result->kundeTelefon; ?>" required>
                     </div>
                 </div>
 
@@ -127,8 +92,8 @@ if (!empty($_POST["data"])) {
                 <div class="col-12 col-md-6 mb-4">
                     <div class="form-group">
                         <label for="kundeEmail">Kundens Email Adresse</label>
-                        <input class="form-control" type="email" name="data[kundeEmail]" id="kundeEmail"
-                               placeholder="Email Adresse" value="" required>
+                        <input class="form-control" type="email" name="kundeEmail" id="kundeEmail"
+                               placeholder="Email Adresse" value="<?php echo $result->kundeEmail; ?>" required>
                     </div>
                 </div>
 
@@ -136,33 +101,32 @@ if (!empty($_POST["data"])) {
                 <div class="col-12 col-md-6 mb-4">
                     <div class="form-group">
                         <label for="kundeAdresse">Kunde Adresse</label>
-                        <input class="form-control" type="text" name="data[kundeAdresse]" id="kundeAdresse"
-                               placeholder="Kunde Adresse" value="" required>
+                        <input class="form-control" type="text" name="kundeAdresse" id="kundeAdresse"
+                               placeholder="Kunde Adresse" value="<?php echo $result->kundeAdresse; ?>" required>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 mb-4">
                     <div class="form-group">
                         <label for="kundePost">Post nummer</label>
-                        <input class="form-control" type="number" name="data[kundePost]" id="kundePost"
-                               placeholder="Post nr." value="" required>
+                        <input class="form-control" type="number" name="kundePost" id="kundePost"
+                               placeholder="Post nr." value="<?php echo $result->kundePost; ?>" required>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 mb-4">
                     <div class="form-group">
                         <label for="kundeDato">Dato for arbejde</label>
-                        <input class="form-control" type="date" name="data[kundeDato]" id="kundeDato"
-                               placeholder="Dato." value="" required>
+                        <input class="form-control" type="date" name="kundeDato" id="kundeDato"
+                               placeholder="Dato." value="<?php echo $result->kundeDato; ?>" required>
                     </div>
                 </div>
-
 
                 <div class="col-12 col-md-8 mb-4 rounded ">
                     <div class="form-group"
                     <label for="kundeKommentar">Skriv en kommentar til kunden</label>
                     <textarea class="form-control" name="data[kundeKommentar]" id="kundeKommentar"
-                              placeholder="Info om kunden"></textarea>
+                              placeholder="Info om kunden"><?php echo $result->kundeKommentar; ?></textarea>
                 </div>
 
 
@@ -173,8 +137,8 @@ if (!empty($_POST["data"])) {
 
 
             <div class="col-3 ">
-                <button class=" kundecta btn text-white" type="submit" id="btnSubmit" data-toggle="modal"
-                        data-target="#exampleModal">Opret kunde
+                <button class=" kundecta btn text-white" name="editForm" type="submit" id="btnEdit" data-toggle="modal"
+                        data-target="#exampleModal">Gem ny Data
                 </button>
             </div>
 
@@ -194,19 +158,6 @@ if (!empty($_POST["data"])) {
         selector: 'textarea',
     });
 
-    const url = new URL(window.location.href);
-    const status = url.searchParams.get("status");
-
-    const modal = document.querySelector('.modal');
-    const bsModal = new bootstrap.Modal(modal);
-
-    modal.addEventListener('hide.bs.modal', () => {
-        window.history.replaceState(null, null, window.location.pathname);
-    })
-
-    if (status === "1") {
-        bsModal.show();
-    }
 
 </script>
 
@@ -215,5 +166,3 @@ if (!empty($_POST["data"])) {
 
 
 </html>
-
-

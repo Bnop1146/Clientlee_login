@@ -83,6 +83,7 @@ if (!isset($_SESSION['loggedin'])) {
                     <th scope="col">Adresse</th>
                     <th class="td-post" scope="col">Postnr</th>
                     <th class="td-slet">Slet</th>
+                    <th class="td-slet">Info</th>
                 </tr>
                 </thead>
             </table>
