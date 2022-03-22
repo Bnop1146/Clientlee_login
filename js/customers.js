@@ -72,8 +72,8 @@ export default class Customers {
           <td class="td-email"><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${item.kundeEmail}" target="_blank">${item.kundeEmail}</td>
           <td>${item.kundeAdresse}</td>
           <td class="td-post">${item.kundePost}</td>
-          <td class="td-slet"><a href="delete.php?kundeId=${item.kundeId}"><i class='bx bxs-x-circle'></i></a></td>
-          <td class="td-slet"><a href="edit.php?kundeId=${item.kundeId}" class="btn btn-success"></td>
+          <td class="td-slet"><a href="delete.php?kundeId=${item.kundeId}"><i class="fa-solid fa-trash-can"></i></a></td>
+          <td class="td-slet"><a href="edit.php?kundeId=${item.kundeId}" ><i class="fa-solid fa-pen-to-square"></i></a></td>
     </tr>
   </tbody>
 </table>

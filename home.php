@@ -19,8 +19,6 @@ if (!isset($_SESSION['loggedin'])) {
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/home.css" rel="stylesheet" type="text/css">
 
@@ -68,7 +66,7 @@ if (!isset($_SESSION['loggedin'])) {
     <div class="container px-4 py" id="custom-cards">
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 justify-content-center">
             <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
                     <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                         <h2 class="pb-5 mt-5 mb-4 display-6 lh-1 fw-bold">Tryk på pilen for hurtigt at komme til din kundeoversigt</h2>
                         <ul class="d-flex list-unstyled mt-auto">
@@ -82,7 +80,7 @@ if (!isset($_SESSION['loggedin'])) {
 
 
             <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg">
                     <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
                         <h2 class="pb-5 mt-5 mb-4 display-6 lh-1 fw-bold">Ønsker du at oprette nye kunder kan du trykke på pilen her</h2>
                         <ul class="d-flex list-unstyled mt-auto">

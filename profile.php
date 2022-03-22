@@ -11,14 +11,9 @@ if (!isset($_SESSION['loggedin'])) {
 require 'init.php';
 
 
-// We don't have the password or email info stored in sessions so instead we can get the results from the database.
-$stmt = $con->prepare('SELECT password, email, company FROM accounts WHERE id = ?');
-// In this case we can use the account ID to get the account info.
-$stmt->bind_param('i', $_SESSION['id']);
-$stmt->execute();
-$stmt->bind_result($password, $email, $company);
-$stmt->fetch();
-$stmt->close();
+$sql = "SELECT * FROM accounts WHERE id = :id";
+$bind = [":id" => $_SESSION['id']];
+$result = $db->sql($sql, $bind);
 ?>
 
 <!DOCTYPE html>
@@ -38,9 +33,9 @@ $stmt->close();
 <!--Container Main start-->
 <div class="">
     <div class="content">
-        <h2>Profile Page</h2>
+        <h2>Profil Side</h2>
         <div>
-            <p>Your account details are below:</p>
+            <p>Se dine login oplysninger herunder:</p>
             <table>
                 <tr>
                     <td>Username:</td>
@@ -48,12 +43,12 @@ $stmt->close();
                 </tr>
                 <tr>
                     <td>Email:</td>
-                    <td><?= $email ?></td>
+                    <td><?= $result[0]->email ?></td>
                 </tr>
 
                 <tr>
                     <td>Virksomhed:</td>
-                    <td><?= $company ?></td>
+                    <td><?= $result[0]->company ?></td>
                 </tr>
             </table>
         </div>

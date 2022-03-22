@@ -55,10 +55,7 @@ if (!empty($_POST["data"])) {
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-    <link rel="preconnect" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
@@ -71,27 +68,7 @@ if (!empty($_POST["data"])) {
 </head>
 
 <body class="loggedin">
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Indsætning fuldført</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
-            </div>
-            <div class="modal-body">
-                Din kunde indsætning er fuldendt, tryk på Gå til Kundeoversigt for at gå til alle kunder
-                eller tryk på indsæt ny, for at indtaste flere kunder.
-            </div>
-            <div class="modal-footer">
-                <a class="btn btn-success text-white" type="button"  href="customers.php" role="button">Gå til Kundeoversigt</a>
-                <a class="btn btn-primary text-white" type="button"  href="insert.php" role="button">Indsæt ny</a>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 <?php include 'navigation.php'; ?>
@@ -173,9 +150,35 @@ if (!empty($_POST["data"])) {
 
 
             <div class="col-3 ">
-                <button class=" kundecta btn text-white" type="submit" id="btnSubmit" data-toggle="modal"
+                <button class=" kundecta btn text-white" type="button" id="btnSubmit" data-toggle="modal"
                         data-target="#exampleModal">Opret kunde
                 </button>
+            </div>
+
+
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Indsætning fuldført</h5>
+                            <button type="button" class="btn-close btn-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                        </div>
+                        <div class="modal-body">
+                            Din kunde indsætning er fuldendt, tryk på Gå til Kundeoversigt for at gå til alle kunder
+                            eller tryk på indsæt ny, for at indtaste flere kunder.
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn btn-success text-white" type="submit"  href="customers.php" role="button">Gå til Kundeoversigt</a>
+                            <a class="btn btn-primary text-white" type="button"  href="insert.php" role="button">Indsæt ny</a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 

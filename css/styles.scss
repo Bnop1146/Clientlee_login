@@ -1,194 +1,206 @@
 * {
-	box-sizing: border-box;
-	font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
-	font-size: 16px;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
-	--header-height: 3rem;
-	--nav-width: 68px;
-	--first-color: #2871cc;
-	--first-color-light: #AFA5D9;
-	--white-color: #F7F6FB;
-	--body-font: 'Nunito', sans-serif;
-	--normal-font-size: 1rem;
-	--z-fixed: 100
+  --header-height: 3rem;
+  --nav-width: 68px;
+  --first-color: #2871cc;
+  --first-color-light: #AFA5D9;
+  --white-color: #F7F6FB;
+  --body-font: 'Nunito', sans-serif;
+  --normal-font-size: 1rem;
+  --z-fixed: 100
 }
 
 
-
-.kundecta{
-	background: var(--first-color) !important;
+.kundecta {
+  background: var(--first-color) !important;
 }
 
-.insert-line{
-	padding: 1px;
-	color: var(--first-color);
+.insert-line {
+  padding: 1px;
+  color: var(--first-color);
 }
 
 
 .login {
-	width: 375px;
-	background-color: #ffffff;
-	box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
-	margin: 30px auto;
-	border-radius: 4px;
+  width: 375px;
+  background-color: #ffffff;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+  margin: 30px auto;
+  border-radius: 4px;
 }
 
 .login h1 {
-	text-align: center;
-	color: #5b6574;
-	font-size: 24px;
-	padding: 20px 0 20px 0;
-	border-bottom: 1px solid #dee0e4;
+  text-align: center;
+  color: #5b6574;
+  font-size: 24px;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid #dee0e4;
 }
 
 .login form {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
 }
 
 .login form label {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 50px;
-	height: 50px;
-	background-color: #2871cc;
-	color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #2871cc;
+  color: #ffffff;
 }
 
 .login form input[type="password"], .login form input[type="text"] {
-	width: 310px;
-	height: 50px;
-	border-radius: 4px;
-	border: 1px solid #dee0e4;
-	margin-bottom: 20px;
-	padding: 0 15px;
+  width: 310px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid #dee0e4;
+  margin-bottom: 20px;
+  padding: 0 15px;
 }
 
 .login form input[type="submit"] {
-	width: 100%;
-	padding: 15px;
-	margin-top: 20px;
-	background-color: #2871cc;
-	border: 0;
-	border-radius: 4px;
-	cursor: pointer;
-	font-weight: bold;
-	color: #ffffff;
-	transition: background-color 0.2s;
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: #2871cc;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+  transition: background-color 0.2s;
 }
 
 .login form input[type="submit"]:hover {
-	background-color: #5099f4;
-	transition: background-color 0.2s;
+  background-color: #5099f4;
+  transition: background-color 0.2s;
 }
 
 
 .navtop {
-	background-color: #2f3947;
-	height: 60px;
-	width: 100%;
-	border: 0;
+  background-color: #2f3947;
+  height: 60px;
+  width: 100%;
+  border: 0;
 }
+
 .navtop div {
-	display: flex;
-	margin: 0 auto;
-	width: 1000px;
-	height: 100%;
+  display: flex;
+  margin: 0 auto;
+  width: 1000px;
+  height: 100%;
 }
+
 .navtop div h1, .navtop div a {
-	display: inline-flex;
-	align-items: center;
+  display: inline-flex;
+  align-items: center;
 }
+
 .navtop div h1 {
-	flex: 1;
-	font-size: 24px;
-	padding: 0;
-	margin: 0;
-	color: #eaebed;
-	font-weight: normal;
+  flex: 1;
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+  color: #eaebed;
+  font-weight: normal;
 }
+
 .navtop div a {
-	padding: 0 20px;
-	text-decoration: none;
-	color: #c1c4c8;
-	font-weight: bold;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #c1c4c8;
+  font-weight: bold;
 }
+
 .navtop div a i {
-	padding: 2px 8px 0 0;
+  padding: 2px 8px 0 0;
 }
+
 .navtop div a:hover {
-	color: #eaebed;
+  color: #eaebed;
 }
+
 body.loggedin {
-	background-color: #f3f4f7;
+  background-color: #f3f4f7;
 }
+
 .content {
-	width: 1000px;
-	margin: 0 auto;
+  width: 1000px;
+  margin: 0 auto;
 }
+
 .content h2 {
-	margin: 0;
-	padding: 25px 0;
-	font-size: 22px;
-	border-bottom: 1px solid #e0e0e3;
-	color: #4a536e;
+  margin: 0;
+  padding: 25px 0;
+  font-size: 22px;
+  border-bottom: 1px solid #e0e0e3;
+  color: #4a536e;
 }
+
 .content > p, .content > div {
-	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
-	margin: 25px 0;
-	padding: 25px;
-	background-color: #fff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+  margin: 25px 0;
+  padding: 25px;
+  background-color: #fff;
 }
+
 .content > p table td, .content > div table td {
-	padding: 5px;
+  padding: 5px;
 }
+
 .content > p table td:first-child, .content > div table td:first-child {
-	font-weight: bold;
-	color: #4a536e;
-	padding-right: 15px;
+  font-weight: bold;
+  color: #4a536e;
+  padding-right: 15px;
 }
+
 .content > div p {
-	padding: 5px;
-	margin: 0 0 10px 0;
+  padding: 5px;
+  margin: 0 0 10px 0;
 }
 
-.loginsek{
-	margin-top: 100px;
+.loginsek {
+  margin-top: 100px;
 }
 
-@media screen and (min-width: 768px){
-	.loglogo{
-		width: 190px;
-	}
-	.login{
-		margin: 40px auto;
-		width: 400px;
-	}
+@media screen and (min-width: 768px) {
+  .loglogo {
+    width: 190px;
+  }
+  .login {
+    margin: 40px auto;
+    width: 400px;
+  }
 
-	.loginsek{
-		margin-top: 250px;
-	}
+  .loginsek {
+    margin-top: 250px;
+  }
 
 }
 
-@media screen and (min-width: 1024px){
-	.loglogo{
-		width: 210px;
-	}
-	.login{
-		margin: 50px auto;
-	}
+@media screen and (min-width: 1024px) {
+  .loglogo {
+    width: 210px;
+  }
+  .login {
+    margin: 50px auto;
+  }
 
-	.loginsek{
-		margin-top: 100px;
-	}
+  .loginsek {
+    margin-top: 100px;
+  }
 
 }
 

@@ -69,7 +69,7 @@ require 'init.php';
         <h3>Redigerings formular</h3>
         <hr class="insert-line mt-3">
 
-        <form class="m-5" method="post" action="modify.php?kundeId= <?= $id ?>" enctype="multipart/form-data">
+        <form class="m-5" method="post" action="modify.php?kundeId=<?= $id ?>" enctype="multipart/form-data">
             <div class="row">
 
                 <div class="col-12 col-md-6 mb-4">
@@ -125,7 +125,7 @@ require 'init.php';
                 <div class="col-12 col-md-8 mb-4 rounded ">
                     <div class="form-group"
                     <label for="kundeKommentar">Skriv en kommentar til kunden</label>
-                    <textarea class="form-control" name="data[kundeKommentar]" id="kundeKommentar"
+                    <textarea class="form-control" name="kundeKommentar" id="kundeKommentar"
                               placeholder="Info om kunden"><?php echo $result->kundeKommentar; ?></textarea>
                 </div>
 

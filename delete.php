@@ -5,10 +5,9 @@ $id = $_GET['kundeId'];
 
 
 // sql to delete a record
-$sql = "DELETE FROM customers WHERE kundeId = $id";
-
-if (mysqli_query($con, $sql)) {
-    mysqli_close($con);
+$result = $db->sql("DELETE FROM customers WHERE kundeId = :id", [":id" => $id], false);
+var_dump($result);
+if ($result) {
     header('Location: customers.php');
     exit;
 } else {
