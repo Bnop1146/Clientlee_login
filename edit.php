@@ -1,4 +1,3 @@
-
 <?php
 
 // We need to use sessions, so you should always start sessions using the below code.
@@ -12,13 +11,11 @@ if (!isset($_SESSION['loggedin'])) {
 
 require 'init.php';
 
-    $id = $_GET['kundeId'];
-    $sql = "SELECT * FROM customers WHERE kundeId = $id";
-    $bind = [":kundeId" => $_GET["kundeId"]];
-    $result = $db->sql($sql, $bind);
-    $result = $result[0];
-
-
+$id = $_GET['kundeId'];
+$sql = "SELECT * FROM customers WHERE kundeId = $id";
+$bind = [":kundeId" => $_GET["kundeId"]];
+$result = $db->sql($sql, $bind);
+$result = $result[0];
 
 
 
@@ -32,6 +29,7 @@ require 'init.php';
     <meta charset="utf-8">
 
     <title>Redigering</title>
+    <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico"/>
 
     <meta name="robots" content="All">
     <meta name="author" content="Udgiver">
@@ -140,6 +138,12 @@ require 'init.php';
                 <button class=" kundecta btn text-white" name="editForm" type="submit" id="btnEdit" data-toggle="modal"
                         data-target="#exampleModal">Gem ny Data
                 </button>
+
+                <button
+                    class="td-slet"><a href="delete.php?kundeId=<?= $id ?>"><i
+                                    class="fa-solid fa-trash-can"></i></a>
+                </button>
+
             </div>
 
 

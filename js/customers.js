@@ -67,10 +67,10 @@ export default class Customers {
   <tbody class="text-center  ">
     <tr class="tr-table">
           <td class="td-dato ">${item.kundeDato}</td>
-          <td>${item.kundeNavn}</td>
+          <td class="td-navn">${item.kundeNavn}</td>
           <td class="td-telefon"><a href="tel:${item.kundeTelefon}">${item.kundeTelefon}</a></td>
-          <td class="td-email"><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${item.kundeEmail}" target="_blank">${item.kundeEmail}</td>
-          <td>${item.kundeAdresse}</td>
+          <td class="td-email"><a href="mailto:${item.kundeEmail}?subject=Giv en title&body=Hej ${item.kundeNavn}" target="_blank">${item.kundeEmail}</td>
+          <td class="td-adresse">${item.kundeAdresse}</td>
           <td class="td-post">${item.kundePost}</td>
           <td class="td-slet"><a href="delete.php?kundeId=${item.kundeId}"><i class="fa-solid fa-trash-can"></i></a></td>
           <td class="td-slet"><a href="edit.php?kundeId=${item.kundeId}" ><i class="fa-solid fa-pen-to-square"></i></a></td>

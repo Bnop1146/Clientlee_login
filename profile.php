@@ -20,7 +20,10 @@ $result = $db->sql($sql, $bind);
 <html lang=>
 <head>
     <meta charset="utf-8">
+
     <title>Profil side</title>
+    <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico" />
+
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 </head>

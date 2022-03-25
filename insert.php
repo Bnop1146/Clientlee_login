@@ -47,6 +47,7 @@ if (!empty($_POST["data"])) {
     <meta charset="utf-8">
 
     <title>Indsæt ny kunde</title>
+    <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico" />
 
     <meta name="robots" content="All">
     <meta name="author" content="Udgiver">
@@ -150,7 +151,7 @@ if (!empty($_POST["data"])) {
 
 
             <div class="col-3 ">
-                <button class=" kundecta btn text-white" type="button" id="btnSubmit" data-toggle="modal"
+                <button class=" kundecta btn text-white" type="submit" id="btnSubmit" data-toggle="modal"
                         data-target="#exampleModal">Opret kunde
                 </button>
             </div>

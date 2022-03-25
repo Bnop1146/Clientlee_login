@@ -8,7 +8,6 @@ if (!isset($_SESSION['loggedin'])) {
 }
 
 
-
 ?>
 
 <!DOCTYPE html>
@@ -16,6 +15,8 @@ if (!isset($_SESSION['loggedin'])) {
 <head>
     <meta charset="utf-8">
     <title>Dashboard</title>
+    <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico"/>
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
@@ -34,37 +35,41 @@ if (!isset($_SESSION['loggedin'])) {
 
     <div class="p-5">
         <div class="customers p-5">
-            <div class="filter mb-5"> Søgemaskine
-                <br>
+            <h2 class="mb-3">Kundeoversigt</h2>
+            <div class="filter mb-4">
+                <div>
+                    <h4>Søgemaskine</h4>
+                    <p class="text-muted">Søg på</p>
+                </div>
                 <div class="row d-flex align-items-center justify-content-center">
                     <div class="col-md-2 ">
                         <input type="search" class="form-control dateSearch  text-black"
-                               placeholder="Søg på Dato">
+                               placeholder="Dato">
                     </div>
 
                     <div class="col-md-2 ">
                         <input type="search" class="form-control nameSearch  text-black"
-                               placeholder="Søg på Navn ">
+                               placeholder="Navn ">
                     </div>
 
                     <div class="col-md-2 ">
                         <input type="search" class="form-control emailSearch text-black"
-                               placeholder="Søg på Email">
+                               placeholder="Email">
                     </div>
 
                     <div class="col-md-2 ">
                         <input type="search" class="form-control adresseSearch  text-black"
-                               placeholder="Søg på adresse">
+                               placeholder="adresse">
                     </div>
 
                     <div class="col-md-2 ">
                         <input type="search" class="form-control numberSearch  text-black"
-                               placeholder="Søg på Telefon">
+                               placeholder="Telefon">
                     </div>
 
                     <div class="col-md-2 ">
                         <input type="search" class="form-control postSearch  text-black"
-                               placeholder="Søg på Postnr">
+                               placeholder="Postnr">
                     </div>
 
                 </div>
@@ -74,13 +79,13 @@ if (!isset($_SESSION['loggedin'])) {
                 <thead class="text-center">
                 <tr>
                     <th class="td-dato" scope="col">Dato</th>
-                    <th scope="col">Navn</th>
+                    <th class="td-navn" scope="col">Navn</th>
                     <th class="td-telefon" scope="col">Telefon</th>
                     <th class="td-email" scope="col">Email</th>
-                    <th scope="col">Adresse</th>
+                    <th class="td-adresse" scope="col">Adresse</th>
                     <th class="td-post" scope="col">Postnr</th>
-                    <th class="td-slet">Slet</th>
-                    <th class="td-slet">Edit</th>
+                    <th class="td-slet" scope="col">Slet</th>
+                    <th class="td-slet" scope="col">Edit</th>
                 </tr>
                 </thead>
             </table>

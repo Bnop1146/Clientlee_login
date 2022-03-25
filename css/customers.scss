@@ -76,10 +76,20 @@ table th {
 }
 
 
+
 .fa-trash-can {
 
   color: #D2042D;
 
+}
+
+
+.td-navn{
+  width: 20%;
+}
+
+.td-adresse{
+  display: none;
 }
 
 .td-dato{
@@ -92,11 +102,13 @@ table th {
 
 .td-email{
   width: 25%;
+  display: none;
 }
 
 
 .td-post{
   width: 10%;
+  display: none;
 }
 
 .td-slet{
@@ -104,3 +116,32 @@ table th {
 }
 
 
+
+@media screen and (min-width: 1024px) {
+
+
+  .td-adresse{
+    display: none;
+  }
+
+  .td-dato{
+    width: 12%;
+  }
+
+  .td-telefon{
+    width: 13%;
+  }
+
+  .td-email{
+    width: 25%;
+    display: none;
+  }
+
+
+  .td-post{
+    width: 10%;
+    display: none;
+  }
+
+
+}

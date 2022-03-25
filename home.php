@@ -6,7 +6,7 @@ if (!isset($_SESSION['loggedin'])) {
     header('Location: index.html');
     exit;
 }
-//$hashed_password = password_hash('test', PASSWORD_DEFAULT);
+//$hashed_password = password_hash('Nikolaj6576', PASSWORD_DEFAULT);
 //echo $hashed_password;
 
 ?>
@@ -15,7 +15,10 @@ if (!isset($_SESSION['loggedin'])) {
 <html lang="">
 <head>
     <meta charset="utf-8">
+
     <title>Dashboard</title>
+    <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico" />
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -40,7 +43,7 @@ if (!isset($_SESSION['loggedin'])) {
                 <p class="home2over">Velkommen til dit Dashboard</p>
                 <p class="home2tekst">
                     Dit Dashboard hjælper dig med at holde din kundekreds Organiseret, og kontakte dem
-                    hvis der skulle opstå problemer. Her i Dashboarded har du mulighed for at se dine nuværende
+                    hvis der skulle opstå problemer. Her i dit Dashboard har du mulighed for at se dine nuværende
                     kunder, samt at oprette nye i vores indsætningsformular. Kundeoversigten lader dig søge i alle
                     informationer du har på din kunde, for at gøre det nemt og overskueligt, at planlægge yderlige service.
 
@@ -94,6 +97,8 @@ if (!isset($_SESSION['loggedin'])) {
         </div>
     </div>
 
+
+    <iframe src="https://calendar.google.com/calendar/embed?src=bnop1146%40gmail.com&ctz=Europe%2FCopenhagen" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
 
 </div>
 <!--Container Main end-->
