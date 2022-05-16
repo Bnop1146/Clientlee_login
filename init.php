@@ -1,7 +1,7 @@
 <?php
 require "classes/classDB.php";
 
-const CONFIG_LIVE = "1"; // 0: Test enviroment || 1: Live enviroment
+const CONFIG_LIVE = "0"; // 0: Test enviroment || 1: Live enviroment
 
 if (CONFIG_LIVE == 0) {
     $DB_SERVER = 'localhost';
@@ -12,8 +12,8 @@ if (CONFIG_LIVE == 0) {
 } else {
     $DB_SERVER = "mysql98.unoeuro.com";
     $DB_NAME = "bengtson_multiservice_dk_db_phplogin";
-    $DB_USER = "bengtson_multiservice_dk";
-    $DB_PASS = "r4Bk3cdDzeHF";
+    $DB_USER = "";
+    $DB_PASS = "";
 
 
 }

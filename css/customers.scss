@@ -1,5 +1,29 @@
+.loggedinbg{
+  background-image: url("../image/Dashboard circles.png");
+  background-size: cover;
+  background-color: #FFFFFF;
+
+}
+
+.customers{
+
+  h2{
+    font-family: "Red Hat Display", serif;
+    font-weight: 900;
+  }
+}
+
+
+
+
+
+
+.filter input{
+  border: 1px solid #0C0623;
+}
+
 table {
-  border: 1px solid #ccc;
+  border: 1px solid #0C0623;
   border-collapse: collapse;
   margin: 0;
   padding: 0;
@@ -13,8 +37,8 @@ table caption {
 }
 
 table tr {
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
+  background-color: white;
+  border: 0.5px solid #0C0623;
   padding: .35em;
 }
 
@@ -89,7 +113,6 @@ table th {
 }
 
 .td-adresse{
-  display: none;
 }
 
 .td-dato{
@@ -102,13 +125,12 @@ table th {
 
 .td-email{
   width: 25%;
-  display: none;
-}
 
+}
 
 .td-post{
   width: 10%;
-  display: none;
+
 }
 
 .td-slet{
@@ -117,30 +139,26 @@ table th {
 
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1181px) {
 
 
   .td-adresse{
-    display: none;
+
+
   }
 
-  .td-dato{
-    width: 12%;
-  }
 
-  .td-telefon{
-    width: 13%;
-  }
 
   .td-email{
     width: 25%;
-    display: none;
+
+
   }
 
 
   .td-post{
     width: 10%;
-    display: none;
+
   }
 
 

@@ -11,11 +11,11 @@ if (!isset($_SESSION['loggedin'])) {
 
 require 'init.php';
 
-$id = $_GET['kundeId'];
-$sql = "SELECT * FROM customers WHERE kundeId = $id";
-$bind = [":kundeId" => $_GET["kundeId"]];
-$result = $db->sql($sql, $bind);
-$result = $result[0];
+    $id = $_GET['kundeId'];
+    $sql = "SELECT * FROM customers WHERE kundeId = $id";
+    $bind = [":kundeId" => $_GET["kundeId"]];
+    $result = $db->sql($sql, $bind);
+    $result = $result[0];
 
 
 
@@ -53,7 +53,7 @@ $result = $result[0];
 
 </head>
 
-<body class="loggedin">
+<body class="loggedin loggedinbg">
 
 
 <?php include 'navigation.php'; ?>
@@ -63,11 +63,11 @@ $result = $result[0];
 <!--Container Main start-->
 <div class="height-100 ">
 
-    <div class="container mb-4 p-4 border border-dark rounded-2 text-black ">
+    <div class="container containerbg mb-4 p-4 border border-dark rounded-2 text-black ">
         <h3>Redigerings formular</h3>
         <hr class="insert-line mt-3">
 
-        <form class="m-5" method="post" action="modify.php?kundeId=<?= $id ?>" enctype="multipart/form-data">
+        <form class="m-5" method="post" action="modify.php?kundeId=<?= $id ?>" enctype="application/x-www-form-urlencoded">
             <div class="row">
 
                 <div class="col-12 col-md-6 mb-4">
@@ -121,10 +121,11 @@ $result = $result[0];
                 </div>
 
                 <div class="col-12 col-md-8 mb-4 rounded ">
-                    <div class="form-group"
-                    <label for="kundeKommentar">Skriv en kommentar til kunden</label>
-                    <textarea class="form-control" name="kundeKommentar" id="kundeKommentar"
-                              placeholder="Info om kunden"><?php echo $result->kundeKommentar; ?></textarea>
+                    <div class="form-group">
+                        <label for="kundeKommentar">Skriv en kommentar til kunden</label>
+                        <textarea class="form-control" name="kundeKommentar" id="kundeKommentar"
+                                  placeholder="Info om kunden"><?php echo $result->kundeKommentar; ?></textarea>
+                    </div>
                 </div>
 
 
@@ -139,10 +140,6 @@ $result = $result[0];
                         data-target="#exampleModal">Gem ny Data
                 </button>
 
-                <button
-                    class="td-slet"><a href="delete.php?kundeId=<?= $id ?>"><i
-                                    class="fa-solid fa-trash-can"></i></a>
-                </button>
 
             </div>
 

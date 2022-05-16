@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/navigation.css" rel="stylesheet" type="text/css">
@@ -23,9 +23,6 @@
         <i class='bx bx-menu' id="header-toggle"></i>
     </div>
 
-    <a href="profile.php">
-        <div class="header_img"><img src="image/Nikolaj-dashboard.jpg" alt=""></div>
-    </a>
 </header>
 
 <div class="l-navbar" id="nav-bar">
@@ -39,7 +36,7 @@
 
             <div class="nav_list">
                 <a href="home.php" class="nav_link">
-                    <i class='bx bx-grid-alt nav_icon'></i>
+                    <i class='bx bxs-home nav_icon'></i>
                     <span class="nav_name">Hjem</span>
                 </a>
 

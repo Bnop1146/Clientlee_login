@@ -15,7 +15,7 @@ if (!isset($_SESSION['loggedin'])) {
 <head>
     <meta charset="utf-8">
     <title>Dashboard</title>
-    <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico"/>
+    <link rel="shortcut icon" type="image/x-icon" size="32x32" href="image/favicon-32x32.png"/>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -25,13 +25,13 @@ if (!isset($_SESSION['loggedin'])) {
     <script src="https://kit.fontawesome.com/6b4a3d7b29.js" crossorigin="anonymous"></script>
 
 </head>
-<body class="loggedin">
+<body class="loggedin loggedinbg">
 
 <?php include 'navigation.php'; ?>
 
 
 <!--Container Main start-->
-<div class="height-100 bg-light">
+<div class="height-100">
 
     <div class="p-5">
         <div class="customers p-5">

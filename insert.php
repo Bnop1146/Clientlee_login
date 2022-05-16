@@ -68,7 +68,7 @@ if (!empty($_POST["data"])) {
 
 </head>
 
-<body class="loggedin">
+<body class="loggedin loggedinbg">
 
 
 
@@ -79,11 +79,11 @@ if (!empty($_POST["data"])) {
 <!--Container Main start-->
 <div class="height-100 ">
 
-    <div class="container mb-4 p-4 border border-dark rounded-2 text-black ">
+    <div class="container containerbg mb-4 p-4 border border-dark rounded-2 text-black ">
         <h3>Oprettelses formular</h3>
         <hr class="insert-line mt-3">
 
-        <form class="m-5" method="post" action="insert.php" enctype="multipart/form-data">
+        <form class="m-5" method="post" action="insert.php" enctype="application/x-www-form-urlencoded">
             <div class="row">
                 <div class="col-12 col-md-6 mb-4">
                     <div class="form-group">
@@ -119,6 +119,8 @@ if (!empty($_POST["data"])) {
                     </div>
                 </div>
 
+
+
                 <div class="col-12 col-md-6 mb-4">
                     <div class="form-group">
                         <label for="kundePost">Post nummer</label>
@@ -137,10 +139,11 @@ if (!empty($_POST["data"])) {
 
 
                 <div class="col-12 col-md-8 mb-4 rounded ">
-                    <div class="form-group"
-                    <label for="kundeKommentar">Skriv en kommentar til kunden</label>
-                    <textarea class="form-control" name="data[kundeKommentar]" id="kundeKommentar"
+                    <div class="form-group">
+                        <label for="kundeKommentar">Skriv en kommentar til kunden</label>
+                        <textarea class="form-control" name="data[kundeKommentar]" id="kundeKommentar"
                               placeholder="Info om kunden"></textarea>
+                    </div>
                 </div>
 
 
@@ -151,7 +154,7 @@ if (!empty($_POST["data"])) {
 
 
             <div class="col-3 ">
-                <button class=" kundecta btn text-white" type="submit" id="btnSubmit" data-toggle="modal"
+                <button class=" kundecta  text-white" type="submit" id="btnSubmit" data-toggle="modal"
                         data-target="#exampleModal">Opret kunde
                 </button>
             </div>
@@ -193,7 +196,7 @@ if (!empty($_POST["data"])) {
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-<script>
+ <script>
     tinymce.init({
         selector: 'textarea',
     });
