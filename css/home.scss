@@ -1,3 +1,5 @@
+
+
 .loggedin{
   background-image: url("../image/Ømer.png");
   background-size: cover;
@@ -10,7 +12,7 @@
 .home2over{
   font-size: 24px;
   color: var(--tekstfarve);
-  font-weight: 900;
+  font-weight: 700;
   font-family: var(--overskrift-font);
 
 }
@@ -25,13 +27,14 @@
 .home2knap{
   background: #5235D4 ;
   color:white;
+  text-align: center;
   padding: 12px 50px;
   border-radius: 6px;
   cursor: pointer;
   transition: 0.5s;
   font-family: var(--tekst-font) ;
   font-size: 19px;
-
+  margin-top: 5px;
 }
 
 

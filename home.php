@@ -6,7 +6,7 @@ if (!isset($_SESSION['loggedin'])) {
     header('Location: index.html');
     exit;
 }
-   //$hashed_password = password_hash('test', PASSWORD_DEFAULT);
+   //$hashed_password = password_hash('kage1234', PASSWORD_DEFAULT);
    //echo $hashed_password;
 
 ?>
@@ -18,7 +18,7 @@ if (!isset($_SESSION['loggedin'])) {
 
     <title>Dashboard</title>
     <link rel="shortcut icon" type="image/x-icon" size="32x32" href="image/favicon-32x32.png" />
-
+    <link href="http://fonts.cdnfonts.com/css/nexa-bold?styles=29913" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
