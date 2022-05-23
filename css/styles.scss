@@ -1,9 +1,9 @@
-@import url('https://fonts.cdnfonts.com/css/nexa-bold');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
 
 
 * {
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -15,7 +15,7 @@
   --first-color: #0C0623;
   --first-color-light: #5235D4;
   --white-color: #FFFFFF;
-  --body-font: 'Nexa', sans-serif;
+  --body-font: 'Montserrat', sans-serif;
   --normal-font-size: 1rem;
   --z-fixed: 100
 }

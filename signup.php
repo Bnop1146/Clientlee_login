@@ -4,11 +4,11 @@ require 'init.php';
 
 if (!empty($_POST["data"])) {
     $data = $_POST["data"];
-    $file = $_FILES;
-
+    $password = $_POST[$data["password"]];
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
     $sql = "INSERT INTO accounts (username, password, company, telefon) VALUES
-                                    (:username, :password,'' :company, :telefon)";
+                                    (:username, :password, :company, :telefon)";
     $bind = [
         ":username" => $data["username"],
         ":password" => $data["password"],
@@ -18,6 +18,9 @@ if (!empty($_POST["data"])) {
 
 
     ];
+
+
+
 
     $db->sql($sql, $bind, false);
 

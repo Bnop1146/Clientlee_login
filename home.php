@@ -18,8 +18,9 @@ if (!isset($_SESSION['loggedin'])) {
 
     <title>Dashboard</title>
     <link rel="shortcut icon" type="image/x-icon" size="32x32" href="image/favicon-32x32.png" />
-    <link href="http://fonts.cdnfonts.com/css/nexa-bold?styles=29913" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">

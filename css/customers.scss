@@ -8,7 +8,7 @@
 .customers{
 
   h2{
-    font-family: "Red Hat Display", serif;
+    font-family: var(--body-font);
     font-weight: 900;
   }
 }
@@ -109,7 +109,7 @@ table th {
 
 
 .td-navn{
-  width: 20%;
+  width: 15%;
 }
 
 .td-adresse{
@@ -124,7 +124,7 @@ table th {
 }
 
 .td-email{
-  width: 25%;
+  width: 20%;
 
 }
 
@@ -138,28 +138,3 @@ table th {
 }
 
 
-
-@media screen and (max-width: 1181px) {
-
-
-  .td-adresse{
-
-
-  }
-
-
-
-  .td-email{
-    width: 25%;
-
-
-  }
-
-
-  .td-post{
-    width: 10%;
-
-  }
-
-
-}
