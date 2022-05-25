@@ -4,8 +4,8 @@ require 'init.php';
 
 if (!empty($_POST["data"])) {
     $data = $_POST["data"];
-    $password = $_POST[$data["password"]];
-    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+    //$password = $_POST[$data["password"]];
+    //$hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
     $sql = "INSERT INTO accounts (username, password, company, telefon) VALUES
                                     (:username, :password, :company, :telefon)";
@@ -16,7 +16,6 @@ if (!empty($_POST["data"])) {
         ":telefon" => $data["telefon"],
 
 
-
     ];
 
 
@@ -25,7 +24,7 @@ if (!empty($_POST["data"])) {
     $db->sql($sql, $bind, false);
 
 
-
+    header('Location: index.html');
     exit;
 
 }
@@ -46,10 +45,10 @@ if (!empty($_POST["data"])) {
     <meta name="author" content="Udgiver">
     <meta name="copyright" content="Information om copyright">
 
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/signup.scss" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>

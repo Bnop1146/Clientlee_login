@@ -6,14 +6,15 @@ require 'init.php';
 
 
 // Now we check if the data from the login form was submitted, isset() will check if the data exists.
-if (!isset($_POST['username'], $_POST['password'])) {
-    // Could not get the data that should have been sent.
-    exit('Please fill both the username and password fields!');
-}
 
-$sql = "SELECT id, password FROM accounts WHERE username = :username";
-$bind = [":username" => $_POST['username']];
-$stmt = $db->sql($sql, $bind);
+    if (!isset($_POST['username'], $_POST['password'])) {
+        // Could not get the data that should have been sent.
+        exit('Udfyld venligst både E-mail og Adgangskode felterne!');
+    }
+
+    $sql = "SELECT id, password FROM accounts WHERE username = :username";
+    $bind = [":username" => $_POST['username']];
+    $stmt = $db->sql($sql, $bind);
 
 // Prepare our SQL, preparing the SQL statement will prevent SQL injection.
 if ($stmt = $db->sql($sql, $bind)) {

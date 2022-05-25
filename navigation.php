@@ -50,12 +50,6 @@
                     <span class="nav_name">Opret ny Kunde</span>
                 </a>
 
-                <a href="calender.php" class="nav_link">
-                    <i class="fa-solid fa-calendar"></i>
-                    <span class="nav_name">Kalender</span>
-                </a>
-
-
                 <a href="profile.php" class="nav_link">
                     <i class="fa-solid fa-user"></i>
                     <span class="nav_name">Bruger</span>
