@@ -45,8 +45,8 @@ if (!empty($_POST["data"])) {
     <meta name="author" content="Udgiver">
     <meta name="copyright" content="Information om copyright">
 
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="css/signup.scss" rel="stylesheet" type="text/css">
+    <link href="./css/styles.css" rel="stylesheet" type="text/css">
+    <link href="./css/signup.scss" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 

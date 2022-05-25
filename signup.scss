@@ -1,0 +1,127 @@
+
+body.loggedinbg {
+  background-image: url("../image/Cirkler-login.png");
+  background-color: #5235D4;
+
+
+}
+
+.signupover{
+  margin-bottom: -30px;
+}
+
+.login {
+  width: 375px;
+  background-color: #ffffff;
+  box-shadow:
+          3.4px 3.4px 2.8px rgba(0, 0, 0, 0.022),
+          8.7px 8.7px 7px rgba(0, 0, 0, 0.031),
+          17.7px 17.7px 14.4px rgba(0, 0, 0, 0.039),
+          36.5px 36.5px 29.6px rgba(0, 0, 0, 0.048),
+          100px 100px 81px rgba(0, 0, 0, 0.07)
+;
+
+  margin: 30px auto 20px;
+  border-radius: 12px;
+}
+
+.login h1 {
+  text-align: center;
+  color: #5b6574;
+  font-size: 24px;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid #dee0e4;
+}
+
+.login form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.login form a {
+  text-decoration: none;
+  font-size: 14px;
+  color: grey;
+}
+
+
+.login form input[type="password"], .login form input[type="text"], .login form input[type="number"], .login form input[type="email"]{
+  width: 350px;
+  height: 60px;
+  border-radius: 6px;
+  border: 2px solid #5235D4;
+  margin-bottom: 30px;
+  padding: 0 15px;
+  font-size: 19px;
+}
+
+.login form input[type="submit"] {
+  width: 350px;
+  height: 60px;
+  padding: 15px;
+  margin-top: 30px;
+  background-color: #5235D4;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 22px;
+  color: #ffffff;
+  transition: background-color 0.2s;
+}
+
+.login form input[type="submit"]:hover {
+  background-color: #6146D8;
+  transition: background-color 0.2s;
+}
+
+.loginsek {
+  margin-top: 100px;
+}
+
+body {
+  background-size: cover
+}
+
+@media screen and (min-width: 768px){
+
+  body {
+
+    background-size: cover
+  }
+
+  .loglogo {
+    width: 190px;
+  }
+  .login {
+    margin: 40px auto;
+    width: 400px;
+  }
+
+  .loginsek {
+    margin-top: 250px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+
+  body {
+
+    background-size: cover
+  }
+
+  .loglogo {
+    width: 210px;
+  }
+
+  .login {
+    margin: 50px auto;
+  }
+
+  .loginsek {
+    margin-top: 190px;
+  }
+}
+
